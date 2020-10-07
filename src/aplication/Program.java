@@ -21,8 +21,8 @@ public class Program {
 		char saldoInicial = sc.next().charAt(0);
 		if (saldoInicial == 'y') {
 			System.out.print("Digite o valor para deposito inicial: ");
-			double saldo  = sc.nextDouble();
-			conta = new Conta(numero, titular, saldo);
+			double depositoInicial  = sc.nextDouble();
+			conta = new Conta(numero, titular, depositoInicial);
 		} else {
 			conta = new Conta(numero, titular);
 		}

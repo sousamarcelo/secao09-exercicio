@@ -12,11 +12,11 @@ public class Conta {
 		this.titular = titular;
 	}
 	
-	public Conta(String numero, String titula, double saldo) {
+	public Conta(String numero, String titula, double depositoInicial) {
 		super();
 		this.numero = numero;
 		this.titular = titula;
-		this.saldo = saldo;
+		deposita(depositoInicial);;
 	}
 	
 	public String getNumero() {
